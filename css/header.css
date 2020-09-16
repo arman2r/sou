@@ -1,0 +1,119 @@
+.nav-all-content .nav-wrapper {
+    height: 120px !important;
+    min-height: 120px !important;
+    max-height: 120px !important;
+    line-height: 120px !important;
+}
+
+.nav-all-content .nav-wrapper .btn-floating {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    text-align: center !important;
+    line-height: 55px !important;
+}
+
+.nav-all-content .nav-wrapper ul.left li:nth-child(1) a {
+    margin-right: 0px;
+    line-height: 40px !important;
+}
+
+.nav-all-content .nav-wrapper .btn-floating:hover {
+    background-color: transparent !important;
+}
+
+.nav-all-content .nav-wrapper .btn-floating img {
+    max-height: 25px !important;
+}
+
+.nav-all-content .nav-wrapper .second-icons .btn-floating img {
+    max-height: 22px !important;
+}
+
+.nav-all-content .nav-content {
+    padding-top: 10px !important;
+    padding-bottom: 20px !important;
+    transition: all ease-in-out .2s;
+}
+
+.nav-all-content .nav-content a {
+    padding: 0 10px !important;
+}
+
+.nav-all-content .brand-logo {
+    height: 80px !important;
+    margin: 15px 0 !important;
+}
+
+.nav-all-content .brand-logo img {
+    height: 100%;
+}
+
+.sticky {
+    padding-top: 198px;
+    width: 100%;
+}
+
+.sticky nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav-all-content .nav-wrapper ul.left li:nth-child(1) a {
+    margin-right: 0px !important;
+    width: 0px !important;
+    margin-left: 0px !important;
+    overflow: hidden !important;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+}
+
+.sticky .nav-all-content .nav-wrapper ul.left li:nth-child(1) a {
+    opacity: 1;
+    width: 40px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    line-height: 40px !important;
+}
+
+.sticky nav.nav-extended .nav-wrapper {
+    height: 60px !important;
+    min-height: 60px !important;
+    max-height: 60px !important;
+    line-height: 60px !important;
+}
+
+.sticky .nav-all-content .brand-logo {
+    height: 55px !important;
+    margin: 0 0 !important;
+}
+
+.sticky nav.nav-extended .nav-content {
+    height: 0px !important;
+    min-height: 0px !important;
+    overflow: hidden;
+    padding: 0 0 !important;
+}
+
+.suscribe input {
+    border: 1px solid #909090 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    box-sizing: border-box !important;
+}
+
+.suscribe .col:nth-child(1) {
+    padding-right: 2px !important;
+}
+
+.suscribe .col:nth-child(2) {
+    padding-left: 2px !important;
+    padding-right: 6px !important;
+}
+
+.suscribe button {
+    margin: 15px 0 0 0 !important;
+    height: 45px !important;
+    line-height: 45px !important;
+}
