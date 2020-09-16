@@ -6,27 +6,27 @@
     transition: height ease-in-out .3s;
 }
 
-.nav-all-content .nav-wrapper .btn-floating {
+.nav-all-content .nav-wrapper .mini-btn {
     margin-left: 5px !important;
     margin-right: 5px !important;
     text-align: center !important;
     line-height: 55px !important;
 }
 
-.nav-all-content .nav-wrapper ul.left li:nth-child(1) a {
+.nav-all-content .nav-wrapper ul li a.menu-btn {
     margin-right: 0px;
     line-height: 40px !important;
 }
 
-.nav-all-content .nav-wrapper .btn-floating:hover {
+.nav-all-content .nav-wrapper .mini-btn:hover {
     background-color: transparent !important;
 }
 
-.nav-all-content .nav-wrapper .btn-floating img {
+.nav-all-content .nav-wrapper .mini-btn img {
     max-height: 25px !important;
 }
 
-.nav-all-content .nav-wrapper .second-icons .btn-floating img {
+.nav-all-content .nav-wrapper .second-icons .mini-btn img {
     max-height: 22px !important;
 }
 
@@ -62,7 +62,7 @@
     z-index: 100;
 }
 
-.nav-all-content .nav-wrapper ul.left li:nth-child(1) a {
+.nav-all-content .nav-wrapper ul li a.menu-btn {
     margin-right: 0px !important;
     width: 0px !important;
     margin-left: 0px !important;
@@ -71,12 +71,49 @@
     transition: all ease-in-out .3s;
 }
 
-.sticky .nav-all-content .nav-wrapper ul.left li:nth-child(1) a {
+.material-icons {
+    direction: ltr;
+    display: inline-block;
+    font-family: 'Material Icons';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.nav-all-content .nav-wrapper ul li a.menu-btn::before {
+    position: relative;
+    font-family: 'Material Icons';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    content: 'menu';
+}
+
+.sticky .nav-all-content .nav-wrapper ul li a.menu-btn {
     opacity: 1;
     width: 40px !important;
     margin-left: 5px !important;
     margin-right: 5px !important;
     line-height: 40px !important;
+    text-align: center !important;
+    background-color: transparent !important;
+}
+
+.sticky .nav-all-content .nav-wrapper ul li a.menu-btn:hover {
+    background-color: transparent !important;
 }
 
 .sticky nav.nav-extended .nav-wrapper {
@@ -118,4 +155,80 @@
     margin: 15px 0 0 0 !important;
     height: 45px !important;
     line-height: 45px !important;
+}
+
+@media(max-width:599px) {
+    .suscribe .col:nth-child(1) {
+        padding-right: .75rem !important;
+    }
+    .suscribe .col:nth-child(2) {
+        padding-left: .75rem !important;
+        padding-right: .75rem !important;
+    }
+    .suscribe button {
+        margin: 0px 0 0 0 !important;
+    }
+}
+
+.sticky nav.nav-extended .nav-content.open-menu {
+    padding-top: 10px !important;
+    padding-bottom: 20px !important;
+    min-height: 78px !important;
+}
+
+@media(max-width:992px) {
+    .sticky {
+        padding-top: 70px;
+        width: 100%;
+    }
+    .nav-all-content .nav-wrapper ul li a.menu-btn {
+        opacity: 1;
+        width: 40px !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+        line-height: 40px !important;
+        text-align: center !important;
+        background-color: transparent !important;
+    }
+    .nav-all-content .nav-wrapper {
+        height: 70px !important;
+        min-height: 70px !important;
+        max-height: 70px !important;
+        line-height: 70px !important;
+        transition: height ease-in-out .3s;
+    }
+    .nav-all-content .brand-logo {
+        height: 60px !important;
+        margin: 5px 0 !important;
+        transition: height ease-in-out .2s;
+    }
+    .shared-btn {
+        line-height: 70px !important;
+    }
+    .sticky .shared-btn {
+        line-height: 60px !important;
+    }
+    .shared-btn .fixed-action-btn {
+        bottom: inherit !important;
+        right: inherit !important;
+        padding: 0 0 0 0 !important;
+    }
+    .shared-btn .fixed-action-btn a.share-btn {
+        line-height: 40px !important;
+        opacity: 1 !important;
+        transform: none !important;
+        margin-left: 0px !important;
+        margin-right: 5px !important;
+    }
+    .shared-btn .fixed-action-btn a.share-btn:hover {
+        background-color: transparent !important;
+    }
+    .shared-btn .fixed-action-btn a.sub-btn {
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+        line-height: 55px !important;
+    }
+    .shared-btn ul li a.sub-btn img {
+        height: 25px !important;
+    }
 }

@@ -23,45 +23,61 @@
                 <a href="#" class="brand-logo center">
                     <img src="img/logo.png" alt="sou - logo">
                 </a>
-                <ul class="left hide-on-med-and-down">
+                <ul class="left">
                     <li>
-                        <a class="btn-floating waves-effect btn-flat" href="sass.html">
-                            <span class="material-icons dark-text">
-                                menu
-                            </span>
+                        <a onclick="openMenu()" class="btn-floating menu-btn waves-effect btn-flat dark-text">
+
                         </a>
                     </li>
-                    <li>
-                        <a class="btn-floating waves-effect btn-flat" href="sass.html"><img src="img/facebook.png" alt="facebook"></a>
+                    <li class="shared-btn hide-on-large-only">
+                        <div class="fixed-action-btn" style="position: relative;display: inline-block;right: 24px;">
+                            <a class="btn-floating btn-flat waves-effect share-btn">
+                                <i class="large material-icons dark-text">share</i>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="btn-floating sub-btn light waves-effect"><img src="img/facebook.png" alt="facebook - sou"></a>
+                                </li>
+                                <li>
+                                    <a class="btn-floating sub-btn light waves-effect"><img src="img/instagram.png" alt="instagram - sou"></a>
+                                </li>
+                                <li>
+                                    <a class="btn-floating sub-btn light waves-effect"><img src="img/whatsapp.png" alt="whatsapp - sou"></a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>
-                        <a class="btn-floating waves-effect btn-flat" href="badges.html"><img src="img/instagram.png" alt="instagram"></a>
+                    <li class="hide-on-med-and-down">
+                        <a class="btn-floating mini-btn waves-effect btn-flat" href="sass.html"><img src="img/facebook.png" alt="facebook"></a>
                     </li>
-                    <li>
-                        <a class="btn-floating waves-effect btn-flat" href="collapsible.html"><img src="img/whatsapp.png" alt="whatsapp"></a>
+                    <li class="hide-on-med-and-down">
+                        <a class="btn-floating mini-btn waves-effect btn-flat" href="badges.html"><img src="img/instagram.png" alt="instagram"></a>
+                    </li>
+                    <li class="hide-on-med-and-down">
+                        <a class="btn-floating mini-btn waves-effect btn-flat" href="collapsible.html"><img src="img/whatsapp.png" alt="whatsapp"></a>
                     </li>
                 </ul>
-                <ul class="right hide-on-med-and-down second-icons">
-                    <li>
-                        <a class="btn-floating btn-flat" href="sass.html"><img src="img/search.png" alt="buscador"></a>
+                <ul class="right second-icons">
+                    <li class="hide-on-med-and-down">
+                        <a class="btn-floating mini-btn btn-flat" href="sass.html"><img src="img/search.png" alt="buscador"></a>
+                    </li>
+                    <li class="hide-on-med-and-down">
+                        <a class="btn-floating mini-btn btn-flat" href="badges.html"><img src="img/profile.png" alt="perfil"></a>
                     </li>
                     <li>
-                        <a class="btn-floating btn-flat" href="badges.html"><img src="img/profile.png" alt="perfil"></a>
+                        <a class="btn-floating mini-btn btn-flat" href="collapsible.html"><img src="img/health.png" alt="favoritos"></a>
                     </li>
                     <li>
-                        <a class="btn-floating btn-flat" href="collapsible.html"><img src="img/health.png" alt="favoritos"></a>
-                    </li>
-                    <li>
-                        <a class="btn-floating btn-flat" href="collapsible.html"><img src="img/carrito.png" alt="carrito de compras"></a>
+                        <a class="btn-floating mini-btn btn-flat" href="collapsible.html"><img src="img/carrito.png" alt="carrito de compras"></a>
                     </li>
                 </ul>
             </div>
-            <div class="nav-content container center-align">
+            <div id="menu" class="nav-content container center-align hide-on-med-and-down">
                 <ul class="tabs tabs-transparent center-align">
                     <li style="display: inline-block;float:none" class="tab"><a class="light" href="#test1">NUEVO</a></li>
                     <li style="display: inline-block;float:none" class="tab"><a class="light active" href="#test2">ROPA</a></li>
-                    <li style="display: inline-block;float:none" class="tab disabled"><a class="light" href="#test3">DENIM</a></li>
-                    <li style="display: inline-block;float:none" class="tab disabled"><a class="light" href="#test3">BÁSICOS</a></li>
+                    <li style="display: inline-block;float:none" class="tab"><a class="light" href="#test3">DENIM</a></li>
+                    <li style="display: inline-block;float:none" class="tab"><a class="light" href="#test3">BÁSICOS</a></li>
                     <li style="display: inline-block;float:none" class="tab"><a class="light" href="#test4">SALE</a></li>
                     <li style="display: inline-block;float:none" class="tab"><a class="light" href="#test4">SOU LOVERS</a></li>
                     <li style="display: inline-block;float:none" class="tab"><a class="light" href="#test4">NOSOTROS</a></li>
