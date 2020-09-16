@@ -3,6 +3,7 @@
     min-height: 120px !important;
     max-height: 120px !important;
     line-height: 120px !important;
+    transition: height ease-in-out .3s;
 }
 
 .nav-all-content .nav-wrapper .btn-floating {
@@ -32,7 +33,7 @@
 .nav-all-content .nav-content {
     padding-top: 10px !important;
     padding-bottom: 20px !important;
-    transition: all ease-in-out .2s;
+    transition: all ease-in-out .3s;
 }
 
 .nav-all-content .nav-content a {
@@ -42,6 +43,7 @@
 .nav-all-content .brand-logo {
     height: 80px !important;
     margin: 15px 0 !important;
+    transition: height ease-in-out .2s;
 }
 
 .nav-all-content .brand-logo img {
