@@ -29,8 +29,8 @@ h5 {
 a.btn,
 nav,
 button.btn {
-    background-color: #2ADFCC !important;
-    color: #fff !important
+    background-color: #2ADFCC;
+    color: #fff
 }
 
 span.badge.new {
