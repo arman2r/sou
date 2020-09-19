@@ -16,7 +16,7 @@
 
 .grid-sizer,
 .grid-item {
-    width: 32%;
+    width: 31%;
     box-sizing: border-box;
     min-height: 220px;
     margin-bottom: 15px;
@@ -67,7 +67,7 @@
 
 @media(min-width:992px) {
     .grid__gutter-sizer {
-        width: 1.8%;
+        width: 1.4%;
     }
 }
 
@@ -85,7 +85,7 @@
 
 @media(min-width:1210px) {
     .grid__gutter-sizer {
-        width: 1.8%;
+        width: 1.7%;
     }
 }
 
@@ -102,6 +102,12 @@
 }
 
 @media(min-width:1367px) {
+    .grid__gutter-sizer {
+        width: 2.2%;
+    }
+}
+
+@media(min-width:1441px) {
     .grid__gutter-sizer {
         width: 1%;
     }
