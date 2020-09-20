@@ -508,3 +508,75 @@ footer h6 {
 .social-feed a {
     margin: 20px 10px !important
 }
+
+@media(max-width:992px) {
+    .submenu::before {
+        display: none !important;
+    }
+    .nav-menu-mobile {
+        position: absolute !important;
+        z-index: 1000;
+        width: 100%;
+        height: 0;
+        background-color: #fff;
+        overflow: hidden !important;
+        transition: all cubic-bezier(0.755, 0.05, 0.855, 0.06) .2s;
+        overflow-y: auto !important;
+        box-sizing: border-box !important;
+    }
+    .nav-menu-mobile.open-menu {
+        height: calc(100% - 70px) !important;
+    }
+    .sticky nav.nav-extended .nav-content.open-menu {
+        height: calc(100vh - 60px) !important;
+        min-height: calc(100vh - 60px) !important;
+    }
+    .nav-all-content .nav-menu-mobile.nav-content {
+        padding: 0 0 !important;
+    }
+    .nav-menu-mobile.open-mobile {
+        height: calc(100% - 70px);
+    }
+    .sticky .nav-menu-mobile {
+        height: calc(100% - 60px);
+    }
+    .sticky .nav-menu-mobile.open-mobile {
+        height: calc(100% - 60px);
+    }
+    .nav-all-content .nav-menu-mobile.nav-content {
+        padding-top: 0 !important;
+    }
+    .nav-all-content .nav-menu-mobile.nav-content .tabs {
+        height: 90% !important;
+        padding: 20px 0 !important;
+        box-sizing: border-box !important;
+        max-height: 100% !important;
+    }
+    .nav-all-content .nav-menu-mobile.nav-content .tabs,
+    .nav-all-content .nav-menu-mobile.nav-content .tabs li {
+        display: block !important;
+        width: 100% !important;
+    }
+    .nav-all-content .nav-menu-mobile.nav-content .tabs li {
+        height: max-content !important;
+        z-index: 10;
+    }
+    .nav-all-content .nav-menu-mobile.nav-content .tabs li a {
+        font-size: 1.3rem !important;
+    }
+    .nav-all-content .nav-menu-mobile.nav-content .tabs {
+        margin: 0 auto !important;
+        width: 90% !important;
+        height: max-content !important;
+    }
+    .submenu {
+        position: relative !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: left !important;
+        top: 0 !important;
+    }
+    .nav-all-content .nav-menu-mobile.nav-content .tabs li .submenu .blocks li a {
+        font-size: 1rem !important;
+    }
+}

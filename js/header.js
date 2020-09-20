@@ -57,5 +57,6 @@ function openSearch() {
     var btnTrigger = document.getElementById('scale-demo-trigger');
     var inputSearch = document.getElementById('scale-demo');
     btnTrigger.classList.toggle('change-icon');
-    inputSearch.classList.toggle('scale-out')
+    inputSearch.classList.toggle('scale-out');
+    openMenu()
 }
