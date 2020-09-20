@@ -314,6 +314,11 @@
     width: 40px !important;
 }
 
+.sticky .buscador-item .input-field .prefix.search-prefix {
+    right: 0 !important;
+    top: 1rem !important;
+}
+
 .buscador-item .input-field label {
     margin-left: 0 !important;
 }

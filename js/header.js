@@ -58,5 +58,8 @@ function openSearch() {
     var inputSearch = document.getElementById('scale-demo');
     btnTrigger.classList.toggle('change-icon');
     inputSearch.classList.toggle('scale-out');
-    openMenu()
+    menu.classList.remove('open-menu');
+    btnOpMenu.classList.remove('close-text-btn');
+    menuContent.classList.remove('show-submenu');
+    tabMenu.classList.remove('show-submenu')
 }
