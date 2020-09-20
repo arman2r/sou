@@ -56,13 +56,21 @@
                     </li>
                 </ul>
                 <ul class="right second-icons">
-                    <li class="hide-on-med-and-down">
-                        <a class="btn-floating mini-btn btn-flat" href="sass.html"><img src="img/search.png" alt="buscador"></a>
+                    <li class="buscador-item">
+                        <div class="row" style="margin-bottom: 0;">
+                            <div id="scale-demo" class="input-field col scale-transition scale-out">
+                                <i class="material-icons dark-text prefix hide-on-large-only" onclick="openSearch()">close</i>
+                                <a href="#" class="prefix search-prefix waves-effect btn-floating btn-flat light"><i class="material-icons dark-text">search</i></a>
+                                <input id="buscador" type="text" class="validate">
+                                <label for="buscador">Buscador...</label>
+                            </div>
+                            <a class="btn-floating mini-btn btn-flat waves-effect search-btn-trger" onclick="openSearch()" id="scale-demo-trigger" style="line-height: 40px !important;margin-top:4px !important" href="#!"></a>
+                        </div>
                     </li>
                     <li class="hide-on-med-and-down">
                         <a class="btn-floating mini-btn btn-flat" href="badges.html"><img src="img/profile.png" alt="perfil"></a>
                     </li>
-                    <li>
+                    <li class="hide-on-med-and-down">
                         <a class="btn-floating mini-btn btn-flat" href="collapsible.html"><img src="img/health.png" alt="favoritos"></a>
                     </li>
                     <li>

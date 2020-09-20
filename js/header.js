@@ -52,3 +52,10 @@ function openSubMenu() {
     tabMenu.classList.add('show-submenu');
     backdrop.classList.remove('closebackdrop')
 }
+
+function openSearch() {
+    var btnTrigger = document.getElementById('scale-demo-trigger');
+    var inputSearch = document.getElementById('scale-demo');
+    btnTrigger.classList.toggle('change-icon');
+    inputSearch.classList.toggle('scale-out')
+}
