@@ -49,7 +49,19 @@
 
 .search-category .input-field {
     margin: 8px 0 !important;
-    padding: 0 0 !important;
+}
+
+@media(min-width:600px) {
+    .search-category .input-field {
+        margin: 8px 0 !important;
+        padding: 0 0 !important;
+    }
+}
+
+@media(max-width:599px) {
+    .search-category .input-field {
+        display: flex !important;
+    }
 }
 
 .search-category .input-field input {
