@@ -1,5 +1,16 @@
 .filters .collapsible {
-    border: none
+    border: none;
+    margin-top: 0 !important;
+}
+
+@media(max-width:767px) and (min-width:600px) {
+    .filters {
+        padding: 0 0 !important;
+        width: 30% !important;
+    }
+    .content-category {
+        width: 70% !important;
+    }
 }
 
 .filters .collapsible li {
@@ -48,12 +59,12 @@
 }
 
 .search-category .input-field {
-    margin: 8px 0 !important;
+    margin: 0px 0 !important;
 }
 
 @media(min-width:600px) {
     .search-category .input-field {
-        margin: 8px 0 !important;
+        margin: 0px 0 !important;
         padding: 0 0 !important;
     }
 }
@@ -67,5 +78,5 @@
 .search-category .input-field input {
     border: 1px solid #909090 !important;
     padding: 0 10px !important;
-    height: 2.5rem !important;
+    height: 2.6rem !important;
 }

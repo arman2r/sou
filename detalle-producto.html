@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Tienda virtual - SOU</title>
+    <title>Detalle producto - SOU</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -11,8 +11,56 @@
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/categorias.css">
+    <link rel="stylesheet" href="css/splide.min.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .splide.col:nth-child(1) {
+            padding: 0 0 !important
+        }
+        
+        .splide.col:nth-child(2) {
+            padding-left: 0 !important;
+        }
+        
+        .splide.col ul.splide__list {
+            margin: 0 auto !important
+        }
+        
+        @media(max-width: 992px) {
+            .splide.col:nth-child(2) {
+                padding-right: 0 !important;
+            }
+        }
+        
+        .content-category h3 {
+            font-size: 1.4rem !important;
+            font-weight: 600 !important;
+        }
+        
+        .content-category h5 {
+            font-weight: 600 !important;
+        }
+        
+        .content-category p {
+            font-size: 1rem !important;
+            letter-spacing: .5px;
+        }
+        
+        .counter button {
+            border: 1px solid rgba(0, 0, 0, .1);
+            margin: 0 0
+        }
+        
+        .items-selects label span::before,
+        .items-selects label span::after {
+            border-radius: 0% !important;
+        }
+        
+        .items-selects label span::before {
+            border: 1px solid #5a5a5a !important
+        }
+    </style>
 </head>
 
 <body>
@@ -206,71 +254,193 @@
                         </div>
                     </div>
                 </form>
-                <div class="row category-cards">
-                    <div class="col s12 m6 l4">
-                        <div class="card no-shadow">
-                            <a href="#" class="card-image">
-                                <img src="img/categorias/camisa-rayas-salmon.jpg" alt="camisa a rayas color salmon">
-                            </a>
-                            <div class="card-content">
-                                <a href="#" class="card-title truncate grey-text text-darken-1">Camisa Rayas Color Salmón</a>
-                                <a href="#" class="grey-text">$80.000</a>
+                <div class="row">
+                    <div class="col s12 m12 l8">
+                        <div class="row content-detail">
+                            <div id="secondary-slider" class="splide col s2">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/blusa-amaflora.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/basica-unim.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/camisa-rayas-salmon.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/pantalon-palazzo.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/vestido-favorito.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/vestido.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/blusa-amaflora.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/basica-unim.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/camisa-rayas-salmon.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/pantalon-palazzo.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/vestido-favorito.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/vestido.jpg" alt="blusa amaflora">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="primary-slider" class="splide col s10">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/blusa-amaflora.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/basica-unim.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/camisa-rayas-salmon.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/pantalon-palazzo.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/vestido-favorito.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/vestido.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/blusa-amaflora.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/basica-unim.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/camisa-rayas-salmon.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/pantalon-palazzo.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/vestido-favorito.jpg" alt="blusa amaflora">
+                                        </li>
+                                        <li class="splide__slide center">
+                                            <img class="responsive-img" src="img/categorias/vestido.jpg" alt="blusa amaflora">
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 m6 l4">
-                        <div class="card no-shadow">
-                            <a href="#" class="card-image">
-                                <img src="img/categorias/vestido.jpg" alt="vestido">
-                            </a>
-                            <div class="card-content">
-                                <a href="#" class="card-title truncate grey-text text-darken-1">Vestido Todavida Color Blanco</a>
-                                <a href="#" class="grey-text">$120.000</a>
+                    <div class="col s12 m12 l4 grey-text">
+                        <h3 class="grey-text text-darken-1">Vestido Todavida</h3>
+                        <h6>Ref. 0000-00000</h6>
+
+                        <h5 class="black-text">$120.000</h5>
+                        <p class="grey-text text-darken-1">
+                            Este vestido es todo lo que está bien en esta vida! ✨ 🤩 Perfecto para cualquier ocasión!!!
+                        </p>
+                        <h6>Color</h6>
+                        <form action="#" class="row items-selects">
+                            <div class="col s2">
+                                <label>
+                                    <input name="group1" type="radio" checked />
+                                    <span class="radio-color" color="#000"></span>
+                                </label>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <div class="card no-shadow">
-                            <a href="#" class="card-image">
-                                <img src="img/categorias/blusa-amaflora.jpg" alt="Blusa amaflora">
-                            </a>
-                            <div class="card-content">
-                                <a href="#" class="card-title truncate grey-text text-darken-1">Blusa Amaflora</a>
-                                <a href="#" class="grey-text">$78.000</a>
+                            <div class="col s2">
+                                <label>
+                                    <input name="group1" type="radio" />
+                                    <span class="radio-color" color="#000"></span>
+                                </label>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <div class="card no-shadow">
-                            <a href="#" class="card-image">
-                                <img src="img/categorias/basica-unim.jpg" alt="Básica unim">
-                            </a>
-                            <div class="card-content">
-                                <a href="#" class="card-title truncate grey-text text-darken-1">Básica Unim Color Rosa</a>
-                                <a href="#" class="grey-text">$65.000</a>
+                            <div class="col s2">
+                                <label>
+                                    <input name="group1" type="radio" />
+                                    <span class="radio-color" color="#000"></span>
+                                </label>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <div class="card no-shadow">
-                            <a href="#" class="card-image">
-                                <img src="img/categorias/vestido-favorito.jpg" alt="Vestido Favorit">
-                            </a>
-                            <div class="card-content">
-                                <a href="#" class="card-title truncate grey-text text-darken-1">Vestido Favorit</a>
-                                <a href="#" class="grey-text">$135.000</a>
+                            <div class="col s2">
+                                <label>
+                                    <input name="group1" type="radio" />
+                                    <span class="radio-color" color="#000"></span>
+                                </label>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <div class="card no-shadow">
-                            <a href="#" class="card-image">
-                                <img src="img/categorias/pantalon-palazzo.jpg" alt="Pantalón Palazzo">
-                            </a>
-                            <div class="card-content">
-                                <a href="#" class="card-title truncate grey-text text-darken-1">Pantalón Palazzo</a>
-                                <a href="#" class="grey-text">$95.000</a>
+                            <div class="col s2">
+                                <label>
+                                    <input name="group1" type="radio" />
+                                    <span class="radio-color" color="#000"></span>
+                                </label>
                             </div>
+                            <div class="col s2">
+                                <label>
+                                    <input name="group1" type="radio" />
+                                    <span class="radio-color" color="#000"></span>
+                                </label>
+                            </div>
+                        </form>
+
+                        <h6>Talla</h6>
+                        <form action="#" class="row items-selects">
+                            <div class="col s2">
+                                <label>
+                                    <input name="group1" type="radio" checked />
+                                    <span class="radio-color" color="#000"></span>
+                                </label>
+                            </div>
+                            <div class="col s2">
+                                <label>
+                                    <input name="group1" type="radio" />
+                                    <span class="radio-color" color="#000"></span>
+                                </label>
+                            </div>
+                            <div class="col s2">
+                                <label>
+                                    <input name="group1" type="radio" />
+                                    <span class="radio-color" color="#000"></span>
+                                </label>
+                            </div>
+                            <div class="col s2">
+                                <label>
+                                    <input name="group1" type="radio" />
+                                    <span class="radio-color" color="#000"></span>
+                                </label>
+                            </div>
+                            <div class="col s2">
+                                <label>
+                                    <input name="group1" type="radio" />
+                                    <span class="radio-color" color="#000"></span>
+                                </label>
+                            </div>
+                            <div class="col s2">
+                                <label>
+                                    <input name="group1" type="radio" />
+                                    <span class="radio-color" color="#000"></span>
+                                </label>
+                            </div>
+                        </form>
+                        <h6>Cantidad</h6>
+                        <div class="counter">
+                            <button class="btn btn-flat waves-effect white grey-text text-darken-5">
+                                -
+                            </button>
+                            <button class="btn btn-flat white grey-text text-darken-5">
+                                1
+                            </button>
+                            <button class="btn btn-flat waves-effect white grey-text text-darken-5">
+                                +
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -348,6 +518,8 @@
     <script type="text/javascript" src="js/utils-home.js"></script>
     <script src="js/header.js"></script>
     <script src="js/categorias.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="js/galeria-detalle.js"></script>
 </body>
 
 </html>
