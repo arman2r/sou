@@ -35,7 +35,36 @@ document.addEventListener('DOMContentLoaded', function() {
 
     primarySlider.sync(secondarySlider).mount();
 
+
+
+    var primarySlider = new Splide('#carruselslider', {
+        perPage: 4,
+        rewind: true,
+        fixedWidth: 185,
+        fixedHeight: 200,
+        pagination: false,
+        autoplay: true,
+        gap: '1rem'
+    }).mount();
+
     var allRadios = document.querySelectorAll('.radio-color');
+
+    console.log(allRadios)
+    var element = document.createElement('style');
+    allRadios.forEach(allcolor => {
+        newColor = allcolor.attributes['color'].value;
+        console.log(allcolor.setAttribute('id'))
+        console.log(allcolor)
+        element.appendChild(document.createTextNode(".radio-color::before {background-color:" + newColor + " !important}"));
+        // appending another rules
+
+        document.head.appendChild(element);
+
+    })
+
+
+
+
 
     /*allRadios.forEach(element => {
         let style = window.getComputedStyle(element, '::before');

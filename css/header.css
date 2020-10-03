@@ -504,17 +504,15 @@ footer h6 {
     font-weight: 600;
 }
 
-.social-feed b {
-    display: block !important;
-    float: none !important;
-    clear: both !important;
-}
-
-.social-feed a {
-    margin: 20px 10px !important
-}
-
 @media(max-width:992px) {
+    .social-feed b {
+        display: block !important;
+        float: none !important;
+        clear: both !important;
+    }
+    .social-feed a {
+        margin: 20px 10px !important
+    }
     .submenu::before {
         display: none !important;
     }
