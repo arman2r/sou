@@ -1,0 +1,102 @@
+.filters .collapsible {
+    border: none;
+    margin-top: 0 !important;
+}
+
+@media(max-width:767px) and (min-width:600px) {
+    .filters {
+        padding: 0 0 !important;
+        width: 30% !important;
+    }
+    .content-category {
+        width: 70% !important;
+    }
+}
+
+.filters .collapsible li {
+    margin-bottom: 30px !important;
+}
+
+.filters .collapsible li .collapsible-header {
+    padding: .6rem !important;
+    border-bottom: none !important;
+    display: block !important;
+}
+
+.filters .collapsible li .collapsible-header i {
+    float: right !important;
+    margin-right: 0px !important;
+    font-size: 1.6rem !important;
+    margin-top: -2px !important
+}
+
+.filters .collapsible li .collapsible-body {
+    padding: 0 0 2rem 0;
+    border: none !important;
+}
+
+.filters .collapsible li .collapsible-body a {
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    text-transform: initial !important;
+    text-align: left;
+}
+
+.category-cards .card .card-content {
+    padding: 10px 0 !important;
+}
+
+.category-cards .card a:last-child {
+    font-size: 1.2rem !important;
+    font-weight: 600;
+}
+
+.category-cards .card .card-title {
+    font-size: 1rem !important;
+    font-weight: bold;
+    margin-bottom: 0px !important;
+    line-height: 20px !important;
+}
+
+.search-category .input-field {
+    margin: 0px 0 !important;
+}
+
+@media(min-width:600px) {
+    .search-category .input-field {
+        margin: 0px 0 !important;
+        padding: 0 0 !important;
+    }
+}
+
+@media(max-width:599px) {
+    .search-category .input-field {
+        display: flex !important;
+    }
+}
+
+.search-category .input-field input {
+    border: 1px solid #909090 !important;
+    padding: 0 34px 0 10px !important;
+    box-sizing: border-box !important;
+    height: 2.6rem !important;
+}
+
+.search-category .input-field .prefix {
+    position: absolute;
+    width: 35px;
+    font-size: 1.5rem;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    top: .1rem;
+    right: 0rem;
+    height: 35px;
+}
+
+.search-category .input-field .prefix:hover {
+    background-color: transparent;
+}
+
+.search-category .input-field .prefix i {
+    line-height: 36px !important;
+}
