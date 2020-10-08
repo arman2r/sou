@@ -47,27 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         gap: '1rem'
     }).mount();
 
-    var allRadios = document.querySelectorAll('.radio-color');
+    var select = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(select);
 
-    console.log(allRadios)
-    var element = document.createElement('style');
-    allRadios.forEach(allcolor => {
-        newColor = allcolor.attributes['color'].value;
-        console.log(allcolor.setAttribute('id'))
-        console.log(allcolor)
-        element.appendChild(document.createTextNode(".radio-color::before {background-color:" + newColor + " !important}"));
-        // appending another rules
-
-        document.head.appendChild(element);
-
-    })
-
-
-
-
-
-    /*allRadios.forEach(element => {
-        let style = window.getComputedStyle(element, '::before');
-        console.log(style)
-    })*/
 });

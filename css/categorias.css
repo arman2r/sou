@@ -77,6 +77,26 @@
 
 .search-category .input-field input {
     border: 1px solid #909090 !important;
-    padding: 0 10px !important;
+    padding: 0 34px 0 10px !important;
+    box-sizing: border-box !important;
     height: 2.6rem !important;
+}
+
+.search-category .input-field .prefix {
+    position: absolute;
+    width: 35px;
+    font-size: 1.5rem;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    top: .1rem;
+    right: 0rem;
+    height: 35px;
+}
+
+.search-category .input-field .prefix:hover {
+    background-color: transparent;
+}
+
+.search-category .input-field .prefix i {
+    line-height: 36px !important;
 }

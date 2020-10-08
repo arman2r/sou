@@ -12,80 +12,10 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/categorias.css">
     <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="css/detalle-producto.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style id="some-element">
 
-    </style>
-    <style>
-        .splide.col:nth-child(1) {
-            padding: 0 0 !important
-        }
-        
-        .splide.col:nth-child(2) {
-            padding-left: 0 !important;
-        }
-        
-        .splide.col ul.splide__list {
-            margin: 0 auto !important
-        }
-        
-        @media(max-width: 992px) {
-            .splide.col:nth-child(2) {
-                padding-right: 0 !important;
-            }
-        }
-        
-        .content-category h3 {
-            font-size: 1.4rem !important;
-            font-weight: 600 !important;
-        }
-        
-        .content-category h5 {
-            font-weight: 600 !important;
-        }
-        
-        .content-category p {
-            font-size: 1rem !important;
-            letter-spacing: .5px;
-        }
-        
-        .counter button {
-            border: 1px solid rgba(0, 0, 0, .1);
-            margin: 0 0
-        }
-        
-        .items-selects label span::before,
-        .items-selects label span::after {
-            border-radius: 0% !important;
-        }
-        
-        .items-selects label span::before {
-            border: 1px solid #5a5a5a !important
-        }
-        
-        .descript-product {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            left: 0;
-            padding: 6px 10px;
-            background-color: #fff;
-            text-align: left;
-        }
-        
-        .descript-product p {
-            margin: 5px 0 !important
-        }
-        
-        #carruselslider .splide__arrow {
-            top: 35% !important
-        }
-        
-        #carruselslider a {
-            color: #757575 !important
-        }
-    </style>
 </head>
 
 <body>
@@ -378,41 +308,13 @@
                         </p>
                         <h6>Color</h6>
                         <form action="#" class="row items-selects">
-                            <div class="col s2">
-                                <label>
-                                    <input name="group1" type="radio" checked />
-                                    <span id="radio-button" class="radio-color" color="#FFFF00"></span>
-                                </label>
-                            </div>
-                            <div class="col s2">
-                                <label>
-                                    <input name="group1" type="radio" />
-                                    <span class="radio-color" color="#f00"></span>
-                                </label>
-                            </div>
-                            <div class="col s2">
-                                <label>
-                                    <input name="group1" type="radio" />
-                                    <span class="radio-color" color="#0000FF"></span>
-                                </label>
-                            </div>
-                            <div class="col s2">
-                                <label>
-                                    <input name="group1" type="radio" />
-                                    <span class="radio-color" color="#9400D3"></span>
-                                </label>
-                            </div>
-                            <div class="col s2">
-                                <label>
-                                    <input name="group1" type="radio" />
-                                    <span class="radio-color" color="#8B008B"></span>
-                                </label>
-                            </div>
-                            <div class="col s2">
-                                <label>
-                                    <input name="group1" type="radio" />
-                                    <span class="radio-color" color="#00FFFF"></span>
-                                </label>
+                            <div class="input-field col s12">
+                                <select>
+                                  <option value="" disabled selected>Seleccione el color:</option>
+                                  <option value="1">Azul rey</option>
+                                  <option value="2">Palo rosa</option>
+                                  <option value="3">Naranja</option>
+                                </select>
                             </div>
                         </form>
 
@@ -421,39 +323,34 @@
                             <div class="col s2">
                                 <label>
                                     <input name="group1" type="radio" checked />
-                                    <span class="radio-color" color="#000"></span>
+                                    <span class="radio-color" color="#000"><b>XS</b></span>
                                 </label>
                             </div>
                             <div class="col s2">
                                 <label>
                                     <input name="group1" type="radio" />
-                                    <span class="radio-color" color="#000"></span>
+                                    <span class="radio-color" color="#000"><b>S</b></span>
                                 </label>
                             </div>
                             <div class="col s2">
                                 <label>
                                     <input name="group1" type="radio" />
-                                    <span class="radio-color" color="#000"></span>
+                                    <span class="radio-color" color="#000"><b>M</b></span>
                                 </label>
                             </div>
                             <div class="col s2">
                                 <label>
                                     <input name="group1" type="radio" />
-                                    <span class="radio-color" color="#000"></span>
+                                    <span class="radio-color" color="#000"><b>L</b></span>
                                 </label>
                             </div>
                             <div class="col s2">
                                 <label>
                                     <input name="group1" type="radio" />
-                                    <span class="radio-color" color="#000"></span>
+                                    <span class="radio-color" color="#000"><b>XL</b></span>
                                 </label>
                             </div>
-                            <div class="col s2">
-                                <label>
-                                    <input name="group1" type="radio" />
-                                    <span class="radio-color" color="#000"></span>
-                                </label>
-                            </div>
+
                         </form>
                         <h6>Cantidad</h6>
                         <div class="counter">
