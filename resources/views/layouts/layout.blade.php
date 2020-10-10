@@ -78,10 +78,68 @@
                             <a class="btn-floating mini-btn btn-flat" href="collapsible.html"><img src="img/health.png" alt="favoritos"></a>
                         </li>
                         <li>
-                            <a class="btn-floating mini-btn btn-flat" href="collapsible.html"><img src="img/carrito.png" alt="carrito de compras"></a>
+                            <span class="quantity">5</span>
+                            <a class="btn-floating mini-btn btn-flat dropdown-cart" href='#' data-target='itemsCart'><img src="img/carrito.png" alt="carrito de compras"></a>
                         </li>
                     </ul>
                 </div>
+                <!-- Dropdown Structure -->
+                <ul id='itemsCart' class='dropdown-content drop-cart'>
+                    <li>
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <img src="img/categorias/camisa-rayas-salmon.jpg" alt="producto 1" class="circle">
+                                <span class="title">Camisa Rayas Color Salmón a rayas blancas</span>
+                                <p>$ 160.000 x 2</p>
+                                <a href="#!" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <img src="img/categorias/camisa-rayas-salmon.jpg" alt="producto 1" class="circle">
+                                <span class="title">Camisa Rayas Color Salmón a rayas blancas</span>
+                                <p>$ 160.000 x 2</p>
+                                <a href="#!" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <img src="img/categorias/camisa-rayas-salmon.jpg" alt="producto 1" class="circle">
+                                <span class="title">Camisa Rayas Color Salmón a rayas blancas</span>
+                                <p>$ 160.000 x 2</p>
+                                <a href="#!" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <img src="img/categorias/camisa-rayas-salmon.jpg" alt="producto 1" class="circle">
+                                <span class="title">Camisa Rayas Color Salmón</span>
+                                <p>$ 160.000 x 2</p>
+                                <a href="#!" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <img src="img/categorias/camisa-rayas-salmon.jpg" alt="producto 1" class="circle">
+                                <span class="title">Camisa Rayas Color Salmón</span>
+                                <p>$ 160.000 x 2</p>
+                                <a href="#!" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
                 <div id="menu" class="nav-content container center-align nav-menu-mobile valign-wrapper">
                     <ul class="tabs tabs-transparent center-align ">
                         <li style="display: inline-block;float:none" class="tab">

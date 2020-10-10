@@ -6,6 +6,14 @@ var instances = M.FloatingActionButton.init(dropShared, {
 var drop = document.querySelectorAll('.dropdown-trigger');
 M.Dropdown.init(drop);
 
+var dropCart = document.querySelectorAll('.dropdown-cart')
+M.Dropdown.init(dropCart, {
+    constrainWidth: false,
+    coverTrigger: false,
+    alignment: 'right',
+    isScrollable: true
+})
+
 
 window.onscroll = function() { scrollFunction() };
 

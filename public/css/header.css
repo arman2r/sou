@@ -30,6 +30,22 @@
     max-height: 22px !important;
 }
 
+.nav-all-content .nav-wrapper .second-icons li {
+    position: relative;
+}
+
+.nav-all-content .nav-wrapper .second-icons .quantity {
+    position: absolute;
+    left: 0;
+    top: -17px;
+    font-weight: 600;
+    right: 0;
+    margin: auto;
+    color: #8e8e8e;
+    width: max-content;
+    font-size: .9rem;
+}
+
 .nav-all-content .nav-content {
     padding-top: 10px !important;
     padding-bottom: 20px !important;
@@ -60,6 +76,51 @@
 
 .nav-all-content .brand-logo img {
     height: 100%;
+}
+
+.drop-cart.dropdown-content {
+    height: 350px
+}
+
+.drop-cart.dropdown-content ul {
+    margin: 0 0
+}
+
+.drop-cart.dropdown-content ul li>span {
+    box-sizing: border-box;
+    padding: 10px 50px 10px 0px
+}
+
+.drop-cart .collection {
+    border: none
+}
+
+@media (min-width:992px) {
+    .drop-cart .collection .collection-item.avatar .title {
+        width: 100%;
+        max-width: 280px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.drop-cart .collection .collection-item.avatar .secondary-content {
+    top: 23px;
+    right: 5px
+}
+
+.drop-cart .collection .collection-item.avatar .secondary-content:hover {
+    background: rgba(0, 0, 0, .1) !important;
+}
+
+.drop-cart .collection .collection-item.avatar .secondary-content i {
+    margin: 0 0 0 -6px !important;
+    line-height: 14px !important;
+}
+
+.drop-cart.dropdown-content ul li img {
+    margin: 13px 0;
 }
 
 .sticky {
@@ -504,7 +565,7 @@ footer h6 {
     font-weight: 600;
 }
 
-@media(max-width:992px) {
+@media(max-width:991px) {
     .social-feed b {
         display: block !important;
         float: none !important;
@@ -519,7 +580,7 @@ footer h6 {
     .nav-menu-mobile {
         position: absolute !important;
         z-index: 1000;
-        width: 100%;
+        width: 100% !important;
         height: 0;
         background-color: #fff;
         overflow: hidden !important;
@@ -533,6 +594,7 @@ footer h6 {
     .sticky nav.nav-extended .nav-content.open-menu {
         height: calc(100vh - 60px) !important;
         min-height: calc(100vh - 60px) !important;
+        width: 100%;
     }
     .nav-all-content .nav-menu-mobile.nav-content {
         padding: 0 0 !important;
