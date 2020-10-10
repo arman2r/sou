@@ -1,0 +1,35 @@
+.ingreso .collapsible,
+.ingreso .collapsible li {
+    border: none
+}
+
+.ingreso .collapsible .collapsible-header {
+    background-color: transparent;
+    border: none;
+    display: block;
+    text-align: center !important;
+}
+
+.ingreso .collapsible .collapsible-body {
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.ingreso .collapsible .action-btns {
+    padding-bottom: 20px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.ingreso .collapsible .collapsible-body input {
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.ingreso .collapsible .collapsible-body .input-field>label {
+    padding-left: 10px;
+}

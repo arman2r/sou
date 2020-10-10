@@ -4,6 +4,15 @@ body {
     font-family: 'Merriweather Sans', sans-serif !important;
 }
 
+button,
+a {
+    outline: none;
+}
+
+.bread a::before {
+    color: #757575 !important
+}
+
 @media(min-width:992px) {
     .container {
         width: 80% !important;
@@ -192,4 +201,9 @@ span.badge.new {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+}
+
+.btn-border {
+    border: 1px solid #2ADFCC !important;
+    background-color: transparent !important;
 }

@@ -22,3 +22,11 @@ Route::get('catalogo', function() {
 Route::get('detalle-producto', function() {
     return View::make('detalleproducto');
 });
+
+Route::get('carrito', function() {
+    return View::make('carrito');
+});
+
+Route::get('ingresar', function() {
+    return View::make('ingreso');
+});

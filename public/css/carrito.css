@@ -1,0 +1,105 @@
+@media(min-width:993px) {
+    table.responsive-table select {
+        height: 2rem;
+    }
+    table.responsive-table tr {
+        width: 100%;
+        display: inline-table;
+    }
+    table.responsive-table td,
+    table.responsive-table th {
+        vertical-align: sub;
+        text-align: center;
+    }
+    table.responsive-table td:nth-child(1),
+    table.responsive-table th:nth-child(1),
+    table.responsive-table td:nth-child(2),
+    table.responsive-table th:nth-child(2),
+    table.responsive-table td:nth-child(6),
+    table.responsive-table th:nth-child(6) {
+        vertical-align: middle;
+        text-align: left;
+    }
+    table.responsive-table td:nth-child(6) a:hover {
+        background-color: rgba(0, 0, 0, .1);
+    }
+    ul.stepper.horizontal::before {
+        box-shadow: none;
+    }
+    ul.stepper.horizontal .step,
+    ul.stepper.horizontal .step .step-title {
+        height: 90px;
+        text-align: center;
+    }
+    ul.stepper.horizontal .step .step-title {
+        padding: 10px;
+        line-height: 30px;
+        box-sizing: border-box;
+    }
+    ul.stepper.horizontal .step .step-title::before {
+        display: block;
+        margin: auto;
+        position: relative;
+        top: inherit;
+        left: inherit;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background-color: rgb(119, 119, 119);
+    }
+    ul.stepper.horizontal .step.active .step-title::before {
+        background-color: rgb(61, 61, 61);
+    }
+    ul.stepper.horizontal .step.active .step-title::before,
+    ul.stepper.horizontal .step.done .step-title::before {
+        background-color: rgb(61, 61, 61);
+    }
+    ul.stepper.horizontal .step .step-title::after {
+        content: '';
+        width: 60px;
+        height: 60px;
+        left: 0px;
+        right: 0;
+        margin: auto;
+        top: 5px;
+        position: absolute;
+        background-color: transparent;
+        border-radius: 100%;
+        border: 1px solid rgb(61, 61, 61);
+        transform: scale(0);
+        transition: all ease-in-out .2s;
+    }
+    ul.stepper.horizontal .step.active .step-title::after {
+        transform: scale(1);
+    }
+    ul.stepper.horizontal .step .step-content {
+        overflow: hidden;
+        height: calc(470px - 84px);
+    }
+    ul.stepper.horizontal .step .step-content table.responsive-table {
+        height: 290px;
+        overflow-y: auto;
+        display: list-item;
+        width: 100% !important;
+    }
+}
+
+.step-actions .btn:last-child {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important; 
+    font-family: 'Mate', serif !important;
+    font-weight:bold;
+    font-size:1.3rem
+}
+
+.step-actions .btn:last-child span{
+    text-transform:capitalize !important;
+    font-weight:lighter;
+    font-family: 'Merriweather Sans', sans-serif !important;
+    font-size:.75rem
+}
+
+.step-actions .btn:first-child {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}

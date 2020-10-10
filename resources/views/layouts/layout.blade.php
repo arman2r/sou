@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="css/header.css">
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
         <link rel="stylesheet" href="css/colors.css">
-
     @show
 
     <!--Let browser know website is optimized for mobile-->
@@ -72,7 +71,7 @@
                             </div>
                         </li>
                         <li class="hide-on-med-and-down">
-                            <a class="btn-floating mini-btn btn-flat" href="badges.html"><img src="img/profile.png" alt="perfil"></a>
+                            <a class="btn-floating mini-btn btn-flat" href="{{ url('ingresar') }}"><img src="img/profile.png" alt="perfil"></a>
                         </li>
                         <li class="hide-on-med-and-down">
                             <a class="btn-floating mini-btn btn-flat" href="collapsible.html"><img src="img/health.png" alt="favoritos"></a>
@@ -91,7 +90,7 @@
                                 <img src="img/categorias/camisa-rayas-salmon.jpg" alt="producto 1" class="circle">
                                 <span class="title">Camisa Rayas Color Salmón a rayas blancas</span>
                                 <p>$ 160.000 x 2</p>
-                                <a href="#!" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
+                                <a href="{{ url('carrito') }}" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
                             </li>
                         </ul>
                     </li>
@@ -102,7 +101,7 @@
                                 <img src="img/categorias/camisa-rayas-salmon.jpg" alt="producto 1" class="circle">
                                 <span class="title">Camisa Rayas Color Salmón a rayas blancas</span>
                                 <p>$ 160.000 x 2</p>
-                                <a href="#!" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
+                                <a href="{{ url('carrito') }}" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
                             </li>
                         </ul>
                     </li>
@@ -113,7 +112,7 @@
                                 <img src="img/categorias/camisa-rayas-salmon.jpg" alt="producto 1" class="circle">
                                 <span class="title">Camisa Rayas Color Salmón a rayas blancas</span>
                                 <p>$ 160.000 x 2</p>
-                                <a href="#!" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
+                                <a href="{{ url('carrito') }}" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
                             </li>
                         </ul>
                     </li>
@@ -124,7 +123,7 @@
                                 <img src="img/categorias/camisa-rayas-salmon.jpg" alt="producto 1" class="circle">
                                 <span class="title">Camisa Rayas Color Salmón</span>
                                 <p>$ 160.000 x 2</p>
-                                <a href="#!" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
+                                <a href="{{ url('carrito') }}" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
                             </li>
                         </ul>
                     </li>
@@ -135,7 +134,7 @@
                                 <img src="img/categorias/camisa-rayas-salmon.jpg" alt="producto 1" class="circle">
                                 <span class="title">Camisa Rayas Color Salmón</span>
                                 <p>$ 160.000 x 2</p>
-                                <a href="#!" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
+                                <a href="{{ url('carrito') }}" class="secondary-content btn-floating btn-flat"><i class="material-icons grey-text text-darken-2">send</i></a>
                             </li>
                         </ul>
                     </li>
