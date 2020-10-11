@@ -1,4 +1,23 @@
+table.responsive-table thead {
+    display: none !important
+}
+
+.pattern-align-items .align-items {
+    text-align: left;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.pattern-align-items .align-items * {
+    margin: 5px 0
+}
+
 @media(min-width:993px) {
+    .example-spacer {
+        flex: 1 1 auto;
+    }
     table.responsive-table select {
         height: 2rem;
     }
@@ -22,6 +41,9 @@
     }
     table.responsive-table td:nth-child(6) a:hover {
         background-color: rgba(0, 0, 0, .1);
+    }
+    ul.stepper.horizontal {
+        min-height: 700px;
     }
     ul.stepper.horizontal::before {
         box-shadow: none;
@@ -74,29 +96,63 @@
     }
     ul.stepper.horizontal .step .step-content {
         overflow: hidden;
-        height: calc(470px - 84px);
+        height: calc(600px - 84px);
     }
     ul.stepper.horizontal .step .step-content table.responsive-table {
-        height: 290px;
+        height: 350px;
         overflow-y: auto;
         display: list-item;
         width: 100% !important;
+    }
+    ul.stepper.horizontal .step .step-content.confirm {
+        height: calc(680px - 84px);
+    }
+    .collection .collection-item.pattern-align-items {
+        padding: 0 0
+    }
+    .collection .collection-item.pattern-align-items span,
+    .collection .collection-item.pattern-align-items img {
+        padding: 5px 10px;
+        box-sizing: border-box;
+    }
+    .pattern-align-items .align-items {
+        text-align: left;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .pattern-align-items .align-items>*:last-child {
+        height: inherit;
+        align-self: stretch;
+        align-items: center;
+        display: flex
+    }
+    .pattern-align-items .align-items * {
+        margin: 0px 0
     }
 }
 
 .step-actions .btn:last-child {
     border-top-right-radius: 0px !important;
-    border-bottom-right-radius: 0px !important; 
+    border-bottom-right-radius: 0px !important;
     font-family: 'Mate', serif !important;
-    font-weight:bold;
-    font-size:1.3rem
+    font-weight: bold;
+    font-size: 1.3rem
 }
 
-.step-actions .btn:last-child span{
-    text-transform:capitalize !important;
-    font-weight:lighter;
+.step-actions .btn:last-child span {
+    text-transform: capitalize !important;
+    font-weight: lighter;
     font-family: 'Merriweather Sans', sans-serif !important;
-    font-size:.75rem
+    font-size: .75rem
+}
+
+.address .btn:last-child,
+.address .btn:last-child span {
+    font-family: 'Merriweather Sans', sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: lighter !important;
 }
 
 .step-actions .btn:first-child {

@@ -15,13 +15,13 @@
        <div class="row">
            <div class="col s12 m6 l4 offset-m3 offset-l4 ingreso">
                 <ul class="collapsible no-shadow">
-                    <li class="active">
+                    <li class="active" style="padding-bottom: 20px !important;display: flow-root">
                         <div class="collapsible-header center"><b>CREAR CUENTA</b></div>
                         <div class="collapsible-body">
                             <form class="row">
                                 <div class="col s12">
                                     <div class="input-field col s12">
-                                        <input placeholder="Placeholder" id="nombres" type="text" class="validate">
+                                        <input id="nombres" type="text" class="validate">
                                         <label for="nombres">Nombres</label>
                                     </div>
                                     <div class="input-field col s12">
@@ -35,13 +35,14 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="row center action-btns">
-                            <button class="btn waves-effect col s12">Registrar</button>
+                        <div class="col s12 center action-btns">
+                            <button class="btn waves-effect col s12">Ingresar</button>
                         </div>
                     </li>
-                    <li class="active">
-                        <div class="collapsible-header center">¿Ya estas registrado?</div>
-                        <div class="collapsible-body">
+
+                    <li style="padding-bottom: 20px !important;display: flow-root">
+                        <div class="collapsible-header center white">¿Ya estas registrado?</div>
+                        <div class="collapsible-body white">
                             <form class="row">
                                 <div class="col s12">
 
@@ -56,8 +57,26 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="row center action-btns">
+                        <div class="col s12 center action-btns white">
                             <button class="btn waves-effect col s12">Ingresar</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header center white">Reestablecer contraseña</div>
+                        <div class="collapsible-body white">
+                            <form class="row">
+                                <div class="col s12">
+
+                                    <div class="input-field col s12">
+                                        <input id="correo" type="email" class="validate">
+                                        <label for="correo">Correo Electronico</label>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col s12 center action-btns white">
+                            <button class="btn waves-effect col s12">Enviar</button>
                         </div>
                     </li>
                 </ul>

@@ -79,7 +79,7 @@
 }
 
 .drop-cart.dropdown-content {
-    height: 350px
+    height: 350px !important
 }
 
 .drop-cart.dropdown-content ul {
@@ -461,6 +461,12 @@
     .sticky {
         padding-top: 70px;
         width: 100%;
+    }
+    .drop-cart.dropdown-content {
+        width: 270px !important;
+    }
+    .drop-cart.dropdown-content .collection .collection-item.avatar .title {
+        font-size: 13px;
     }
     .nav-all-content .nav-wrapper ul li a.menu-btn {
         opacity: 1;
