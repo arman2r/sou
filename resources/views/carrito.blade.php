@@ -332,10 +332,7 @@
                             <li class="collection-item pattern-align-items"><div class="align-items"> <span>TARJETA CRÉDITO / DÉBITO</span> <span><img src="img/payment-2.jpg" alt="visa, master card, american express, dinners"></span> <span class="example-spacer"></span><span>$305.000</span> <a href="#" class="btn waves-effect no-shadow">Realizar PAGO</a></div></li>
                             <li class="collection-item pattern-align-items"><div class="align-items"> <span>TARJETA CRÉDITO / DÉBITO</span> <span><img src="img/bancolombia.jpg" alt="visa, master card, american express, dinners"></span> <span class="example-spacer"></span><span>$305.000</span> <a href="#" class="btn waves-effect no-shadow">Realizar PAGO</a></div></li>
                         </ul>
-                        <div class="step-actions">
-                            <!-- Here goes your actions buttons -->
-                            <button class="waves-effect waves-dark btn next-step">Pagos</button>
-                        </div>
+
                     </div>
                 </li>
             </ul>
