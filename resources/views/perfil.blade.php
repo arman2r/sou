@@ -13,7 +13,17 @@
         <div class="row">
             <div class="col s12 m12 l8 offset-l2">
                 <div class="row">
-                    <div class="col s12 center">
+
+                    <div class="col s12">
+                        <ul class="tabs">
+                            <li class="tab col s3"><a class="active" href="#Miperfil">Mi perfil</a></li>
+                            <li class="tab col s3"><a href="#direcciones">Mis direcciones</a></li>
+                            <li class="tab col s3 disabled"><a href="#misCompras">Mis compras</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="Miperfil" class="col s12 center">
+                    <br><br>
                         <a href="#" class="btn btn-floating btn-large profile grey lighten-1">
                             <span class="material-icons">person</span>
                         </a>
@@ -47,8 +57,16 @@
                                     <option value="3">Calí</option>
                                 </select>
                             </div>
+                            <div class="col s12">
+                                <button class="waves-effect waves-light btn"><span class="material-icons left">edit</span> Editar información</button>
+                            </div>
                         </form>
-
+                    </div>
+                    <div id="direcciones" class="col s12 center">
+                    <br><br>
+                        <a href="#" class="btn btn-floating btn-large profile grey lighten-1">
+                            <span class="material-icons">home</span>
+                        </a>
                         <form action="" class="col s12 left-align">
                             <br>
                             <h6>Dirección:</h6>
@@ -95,6 +113,9 @@
                             </div>
                         </form>
                     </div>
+                    <div id="misCompras">
+                    <br><br>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,4 +125,8 @@
 @section('scripts')
     @parent
 
+    <script>
+        var el = document.querySelectorAll('.tabs')
+        var instance = M.Tabs.init(el);
+    </script>
 @endsection
