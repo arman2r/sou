@@ -57,7 +57,9 @@
                                     <option value="3">Calí</option>
                                 </select>
                             </div>
+
                             <div class="col s12">
+                            <br>
                                 <button class="waves-effect waves-light btn"><span class="material-icons left">edit</span> Editar información</button>
                             </div>
                         </form>
@@ -108,6 +110,7 @@
                                 <label for="telefonofijo">Teléfono fijo</label>
                                 <input id="telefonofijo" type="text" value="000 0000000">
                             </div>
+                            <br>
                             <div class="col s12">
                                 <button class="waves-effect waves-light btn"><span class="material-icons left">edit</span> Editar información</button>
                             </div>
