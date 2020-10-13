@@ -103,6 +103,9 @@
         white-space: nowrap;
         text-overflow: ellipsis;
     }
+    #perfiledrop {
+        min-width: 140px !important;
+    }
 }
 
 .drop-cart .collection .collection-item.avatar .secondary-content {
@@ -152,7 +155,7 @@
     font-style: normal;
     font-weight: normal;
     letter-spacing: normal;
-    line-height: 1;
+    line-height: inherit !important;
     text-transform: none;
     white-space: nowrap;
     word-wrap: normal;

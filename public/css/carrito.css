@@ -14,6 +14,18 @@ table.responsive-table thead {
     margin: 5px 0
 }
 
+.acount span.content-btns {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.acount span.content-btns span {
+    font-size: 3rem;
+    line-height: 55px;
+}
+
 @media(min-width:993px) {
     .example-spacer {
         flex: 1 1 auto;

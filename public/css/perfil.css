@@ -1,0 +1,10 @@
+.profile {
+    width: 70px !important;
+    height: 70px !important;
+    margin-bottom: 50px;
+}
+
+.profile span {
+    font-size: 4rem !important;
+    line-height: 65px !important;
+}

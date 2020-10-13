@@ -157,10 +157,27 @@
                 <li class="step">
                     <div class="step-title waves-effect">Cuenta</div>
                     <div class="step-content">
+                        <div class="row valign-wrapper" style="height:100%">
+                            <div class="col s12 m12 l8 offset-l2 acount">
+                                <span class="content-btns">
+                                <a href="#" class="btn btn-floating btn-large grey darken-2"><span class="material-icons">person</span></a>
+                                <p class="grey-text text-darken-2"><b>Ingreso o registro</b></p>
+                                </span>
+                                <span class="content-btns">
+                                <a href="#" class="btn btn-floating btn-large"><span class="material-icons">person</span></a>
+                                <p><b>Joahana Doe</b></p>
+                                </span>
+                                <span class="content-btns">
+                                <a href="{{ url('ingresar') }}" class="btn btn-floating btn-large grey accent-1"><span class="material-icons">autorenew</span></a>
+                                <p class="grey-text texte-darken-1">Cambiar de usuario</p>
+                                </span>
+                            </div>
+
+                        </div>
                         <!-- Your step content goes here (like inputs or so) -->
                         <div class="step-actions">
                             <!-- Here goes your actions buttons -->
-                            <button class="waves-effect waves-dark btn next-step">Compras</button>
+                            <button class="waves-effect waves-dark btn next-step">Continuar</button>
                         </div>
                     </div>
                 </li>
@@ -189,7 +206,7 @@
                         <div class="step-actions address">
                             <!-- Here goes your actions buttons -->
                             <button class="waves-effect waves-dark btn next-step">Enviar aquí</button>
-                            <button class="waves-effect waves-dark btn next-step grey">Editar dirección</button>
+                            <a href="#" class="waves-effect waves-dark btn grey">Editar dirección</a>
                         </div>
                     </div>
                 </li>

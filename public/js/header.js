@@ -4,7 +4,12 @@ var instances = M.FloatingActionButton.init(dropShared, {
     hoverEnabled: false
 });
 var drop = document.querySelectorAll('.dropdown-trigger');
-M.Dropdown.init(drop);
+M.Dropdown.init(drop, {
+    constrainWidth: false,
+    coverTrigger: false,
+    alignment: 'right',
+    isScrollable: true
+});
 
 var dropCart = document.querySelectorAll('.dropdown-cart')
 M.Dropdown.init(dropCart, {

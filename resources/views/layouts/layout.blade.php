@@ -9,8 +9,9 @@
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
-        <link rel="stylesheet" href="css/header.css">
+
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+        <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/colors.css">
     @show
 
@@ -71,7 +72,7 @@
                             </div>
                         </li>
                         <li class="hide-on-med-and-down">
-                            <a class="btn-floating mini-btn btn-flat" href="{{ url('ingresar') }}"><img src="img/profile.png" alt="perfil"></a>
+                            <a class="btn-floating mini-btn btn-flat dropdown-trigger" data-target="perfiledrop" href="#"><img src="img/profile.png" alt="perfil"></a>
                         </li>
                         <li class="hide-on-med-and-down">
                             <a class="btn-floating mini-btn btn-flat" href="collapsible.html"><img src="img/health.png" alt="favoritos"></a>
@@ -83,6 +84,17 @@
                     </ul>
                 </div>
                 <!-- Dropdown Structure -->
+                <ul id='perfiledrop' class="dropdown-content">
+                    <li>
+                        <a href="{{ url('perfil') }}">Mi perfil</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('ingresar') }}">Ingresar</a>
+                    </li>
+                    <li>
+                        <a href="#">Cerrar sesión</a>
+                    </li>
+                </ul>
                 <ul id='itemsCart' class='dropdown-content drop-cart'>
                     <li>
                         <ul class="collection">

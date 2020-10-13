@@ -30,3 +30,7 @@ Route::get('carrito', function() {
 Route::get('ingresar', function() {
     return View::make('ingreso');
 });
+
+Route::get('perfil', function() {
+    return View::make('perfil');
+});
