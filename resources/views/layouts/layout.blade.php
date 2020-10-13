@@ -75,7 +75,7 @@
                             <a class="btn-floating mini-btn btn-flat dropdown-trigger" data-target="perfiledrop" href="#"><img src="img/profile.png" alt="perfil"></a>
                         </li>
                         <li class="hide-on-med-and-down">
-                            <a class="btn-floating mini-btn btn-flat" href="collapsible.html"><img src="img/health.png" alt="favoritos"></a>
+                            <a class="btn-floating mini-btn btn-flat" href="{{ url('favoritos') }}"><img src="img/health.png" alt="favoritos"></a>
                         </li>
                         <li>
                             <span class="quantity">5</span>

@@ -34,3 +34,7 @@ Route::get('ingresar', function() {
 Route::get('perfil', function() {
     return View::make('perfil');
 });
+
+Route::get('favoritos', function() {
+    return View::make('favoritos');
+});
